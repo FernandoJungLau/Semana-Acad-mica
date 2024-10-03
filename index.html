@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Meu Site!!!!</title>
+        <link
+        rel="stylesheet"
+        href="styles.css"
+      />
+    </head>
+    <body>
+        <h1>Meu site</h1>
+        <h2>Site do Fernando</h2>
+        <div>
+            <h3>Listas</h3>
+            <p>Coisas que eu gosto:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="test">
+            <h3>test</h3>
+        </div>
+        <div>
+            <span id="contador">0</span>
+            <button onclick="incrementar(1)">Incrementar</button>
+        </div>
+        <script>
+            let count = 0
+            const span = document.getElementById('contador')
+            function incrementar(valor) {
+                count += valor
+                span.innerText = count
+            }
+        </script>
+    </body>
+</html>
